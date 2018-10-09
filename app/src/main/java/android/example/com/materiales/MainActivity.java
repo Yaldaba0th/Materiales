@@ -1,6 +1,7 @@
 package android.example.com.materiales;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -11,6 +12,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     private int mCount = 0;
     private TextView mShowCount;
+    static GlobalVar datos = new GlobalVar();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,13 +37,12 @@ public class MainActivity extends AppCompatActivity {
         int intID = view.getId();
         Button button = (Button) findViewById(intID);
         String name = button.getText().toString();
-        setContentView(R.layout.activity_second);
-        TextView ficha = (TextView) findViewById(R.id.show_title);
-        ficha.setText(name);
+        datos.setMaterialName(name);
+        startActivity(new Intent(MainActivity.this, Main2Activity.class));
 
     }
 
-    public void regresar(View view) {
-        setContentView(R.layout.activity_main);
+    public void subirMaterial(View view) {
+        startActivity(new Intent(MainActivity.this, Main3Activity.class));
     }
 }
