@@ -41,4 +41,10 @@
         android:text="Prueba INFO"
         android:layout_margin="10dp"
         android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/button_subir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
 </LinearLayout>

@@ -1,6 +1,7 @@
 package android.example.com.materiales;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -35,13 +36,10 @@ public class MainActivity extends AppCompatActivity {
         int intID = view.getId();
         Button button = (Button) findViewById(intID);
         String name = button.getText().toString();
-        setContentView(R.layout.activity_second);
-        TextView ficha = (TextView) findViewById(R.id.show_title);
+        TextView ficha = (TextView) findViewById(R.id.show_material);
         ficha.setText(name);
+        startActivity(new Intent(MainActivity.this, Main2Activity.class));
 
     }
 
-    public void regresar(View view) {
-        setContentView(R.layout.activity_main);
-    }
 }
