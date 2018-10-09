@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity"
+    tools:context=".Main3Activity"
     tools:layout_editor_absoluteY="25dp">
 
 
@@ -17,7 +17,19 @@
         android:textStyle="bold"
         android:textColor="@color/myBackgroundColor"
         android:background="@color/colorPrimary"
-        android:text="Nombre Material"
+        android:text="Subir Materiales:"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/show_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/myBackgroundColor"
+        android:background="@color/colorPrimary"
+        android:layout_margin="5dp"
+        android:text="Nombres del material:"
         android:gravity="center"/>
 
     <TextView
@@ -28,7 +40,7 @@
         android:textStyle="bold"
         android:textColor="@color/myBackgroundColor"
         android:background="@color/colorPrimary"
-        android:text="Pagina: www.algo.cl"
+        android:text="URL:"
         android:layout_margin="5dp"
         android:gravity="center"/>
 
@@ -41,11 +53,11 @@
         android:textColor="@color/myBackgroundColor"
         android:background="@color/colorPrimary"
         android:layout_margin="5dp"
-        android:text="Tipo: pagina web"
+        android:text="Tipo:"
         android:gravity="center"/>
 
     <TextView
-        android:id="@+id/show_points"
+        android:id="@+id/show_descripcion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="24sp"
@@ -53,33 +65,19 @@
         android:textColor="@color/myBackgroundColor"
         android:background="@color/colorPrimary"
         android:layout_margin="5dp"
-        android:text="Puntaje: 0"
+        android:text="Descripcion:"
         android:gravity="center"/>
 
-    <TextView
-        android:id="@+id/show_denuncias"
+    <Button
+        android:id="@+id/button_upload"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="24sp"
-        android:textStyle="bold"
         android:textColor="@color/myBackgroundColor"
         android:background="@color/colorPrimary"
-        android:layout_margin="5dp"
-        android:text="Denuncias: 0"
-        android:gravity="center"/>
-
-    <TextView
-        android:id="@+id/show_usuario"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:textColor="@color/myBackgroundColor"
-        android:background="@color/colorPrimary"
-        android:layout_margin="5dp"
-        android:text="Usuario: Anonimo123"
-        android:gravity="center"/>
-
+        android:onClick="subir"
+        android:gravity="center"
+        android:text="Subir"
+        android:layout_margin="15dp" />
 
     <Button
         android:id="@+id/button_back"

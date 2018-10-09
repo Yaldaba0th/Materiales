@@ -12,6 +12,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     private int mCount = 0;
     private TextView mShowCount;
+    static GlobalVar datos = new GlobalVar();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,10 +37,12 @@ public class MainActivity extends AppCompatActivity {
         int intID = view.getId();
         Button button = (Button) findViewById(intID);
         String name = button.getText().toString();
-        TextView ficha = (TextView) findViewById(R.id.show_material);
-        ficha.setText(name);
+        datos.setMaterialName(name);
         startActivity(new Intent(MainActivity.this, Main2Activity.class));
 
     }
 
+    public void subirMaterial(View view) {
+        startActivity(new Intent(MainActivity.this, Main3Activity.class));
+    }
 }
