@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Main3Activity"
+    tools:layout_editor_absoluteY="25dp">
+
+
+    <TextView
+        android:id="@+id/show_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/myBackgroundColor"
+        android:background="@color/colorPrimary"
+        android:text="Subir Materiales:"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/show_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/myBackgroundColor"
+        android:background="@color/colorPrimary"
+        android:layout_margin="5dp"
+        android:text="Nombres del material:"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/show_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/myBackgroundColor"
+        android:background="@color/colorPrimary"
+        android:text="URL:"
+        android:layout_margin="5dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/show_tipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/myBackgroundColor"
+        android:background="@color/colorPrimary"
+        android:layout_margin="5dp"
+        android:text="Tipo:"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/show_descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/myBackgroundColor"
+        android:background="@color/colorPrimary"
+        android:layout_margin="5dp"
+        android:text="Descripcion:"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/button_upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/myBackgroundColor"
+        android:background="@color/colorPrimary"
+        android:onClick="subir"
+        android:gravity="center"
+        android:text="Subir"
+        android:layout_margin="15dp" />
+
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#9e989d"
+        android:onClick="regresar"
+        android:gravity="center"
+        android:text="Regresar"
+        android:layout_margin="5dp"
+        android:textColor="@android:color/black" />
+</LinearLayout>
